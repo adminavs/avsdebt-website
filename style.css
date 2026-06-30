@@ -1,1 +1,173 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
 
+body{
+    background:#081B3A;
+    color:white;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    position:fixed;
+    width:100%;
+    background:rgba(8,27,58,.95);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:55px;
+    height:55px;
+    object-fit:contain;
+}
+
+.logo span{
+    font-size:22px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#74F0C8;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 20px;
+    background:linear-gradient(rgba(8,27,58,.75),rgba(8,27,58,.9));
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:58px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:24px;
+    color:#74F0C8;
+    margin-bottom:40px;
+}
+
+.btn{
+    display:inline-block;
+    background:#74F0C8;
+    color:#081B3A;
+    text-decoration:none;
+    padding:15px 40px;
+    border-radius:50px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+}
+
+.about,
+.services{
+    padding:90px 8%;
+}
+
+.about h2,
+.services h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:1.8;
+    font-size:18px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    background:white;
+    color:#081B3A;
+    padding:35px;
+    border-radius:20px;
+    transition:.3s;
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#06142d;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    gap:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.logo span{
+    font-size:18px;
+}
+
+}
